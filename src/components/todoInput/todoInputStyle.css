@@ -1,0 +1,14 @@
+input {
+    width: 96.5%;
+    font-size: 18px;
+    padding: 5px 0px 14px 14px;
+    outline: none;
+    border: 0px;
+}
+
+input::-webkit-input-placeholder {
+    color: #919ea5;
+}
+input::-moz-placeholder {
+    color: #919ea5;
+}
