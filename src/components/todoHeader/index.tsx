@@ -24,7 +24,7 @@ const TodoHeader: FC = () => {
             </div>
             <div className="info">
                 <div className="task_count">
-                    <p>{data ? data.length : `${0} task`}</p>
+                    <p>{data ? `${data.length} task` : `${0} task`}</p>
                 </div>
                 <div className="btns">
                     <TodoButtons />
