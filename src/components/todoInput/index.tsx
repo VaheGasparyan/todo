@@ -21,6 +21,8 @@ const TodoInput: FC = () => {
         const newTask = createTask(formData.get(Names.inputValue) as string);
 
         dispatch(setNewTask(newTask));
+
+        formData.set(Names.inputValue, 'asd');
     };
 
     return (

@@ -1,0 +1,45 @@
+.todo_list {
+    width: 431px;
+    background: #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+}
+
+.task {
+    cursor: pointer;
+    margin-top: 13px;
+    margin-bottom: 25px;
+}
+
+.task:last-child {
+    margin-bottom: 20px;
+}
+
+.todo_list p {
+    margin: 0px;
+    font-size: 18px;
+}
+
+.todo_list .border {
+    height: 4px;
+    background: #455963;
+    margin-top: 6px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 100%);
+    transition: .3s all;
+}
+
+.task:hover .border {
+    clip-path: polygon(0% 0%, 50% 0%, 50% 100%, 0% 100%);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+}

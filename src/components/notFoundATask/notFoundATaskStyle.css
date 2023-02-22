@@ -1,0 +1,15 @@
+.not_found {
+    background: #fff;
+    width: 450px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.not_found h3 {
+    font-size: 30px;
+    color: #919ea5;
+}
