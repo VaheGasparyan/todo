@@ -10,3 +10,7 @@ button {
 button:last-child {
     margin: 0px;
 }
+
+button.clicked {
+    color: red;
+}
