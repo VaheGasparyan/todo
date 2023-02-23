@@ -20,8 +20,6 @@ function App() {
         const data = JSON.parse(localStorage.getItem(Names.localStorageName) as string);
         const btnState = localStorage.getItem(Names.btnStateLocalSTRG);
 
-        console.log(btnState);
-
         dispatch(setFirstRender({
             data,
             buttonState: btnState || 'all'

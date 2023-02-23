@@ -17,7 +17,8 @@ const todoSlice = createSlice({
         },
 
         setButtonState: (state, action) => {
-            state.btnState = action.payload;
+            state.btnState = action.payload.btnState;
+            state.data = action.payload.newTodos;
         },
 
         setTask: (state, action) => {

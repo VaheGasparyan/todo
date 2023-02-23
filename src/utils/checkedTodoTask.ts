@@ -1,16 +1,18 @@
 import {ITodo} from "interfaces";
 import {Names} from "enums";
 
-export const checkedTodoTask = (todo: ITodo[], id: string) => {
-    const newTodo = todo.map(todo => {
-        if(todo.id === id) {
+export const checkedTodoTask = (id: string) => {
+    const todos = JSON.parse(localStorage.getItem(Names.localStorageName) as string);
+
+    const newTodo = todos.map((todo: ITodo) => {
+        if(id === todo.id) {
             return {
                 ...todo,
                 completed: !todo.completed
-            }
-        }
+            };
+        };
 
-        return todo
+        return todo;
     });
 
     localStorage.setItem(Names.localStorageName, JSON.stringify(newTodo));
