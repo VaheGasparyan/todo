@@ -28,12 +28,9 @@ const TodoButtons: FC = () => {
                 const text = value.slice(0, 1).toUpperCase() + value.slice(1).toLowerCase();
 
                 if(value === btnState) {
-                    console.log(value);
-                    console.log(btnState);
                     return <button onClick={handleClick} key={uuid()} className={`${value} clicked`}>{text}</button>
                 }
-                console.log(value);
-                console.log(btnState);
+
                 return <button onClick={handleClick} key={uuid()} className={value}>{text}</button>
             })}
         </>
