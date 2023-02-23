@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 
 /// REDUX
 import {useAppDispatch} from "app/hooks";
-import {setTask} from "features/todoSlice";
+import {setFirstRender} from "features/todoSlice";
 
 /// ENUMS
 import {Names} from "enums";
@@ -18,8 +18,14 @@ function App() {
 
     useEffect(() => {
         const data = JSON.parse(localStorage.getItem(Names.localStorageName) as string);
+        const btnState = localStorage.getItem(Names.btnStateLocalSTRG);
 
-        dispatch(setTask(data));
+        console.log(btnState);
+
+        dispatch(setFirstRender({
+            data,
+            buttonState: btnState || 'all'
+        }));
     }, []);
 
   return (

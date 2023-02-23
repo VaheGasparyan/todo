@@ -1,5 +1,6 @@
 export interface ITodoState {
-    data: ITodo[] | null
+    data: ITodo[] | null;
+    btnState: string | 'all'
 }
 
 export interface ITodo {

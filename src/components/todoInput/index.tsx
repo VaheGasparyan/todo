@@ -2,7 +2,7 @@ import {FC, FormEvent} from "react";
 
 /// REDUX
 import {useAppDispatch} from "app/hooks";
-import {setNewTask} from "features/todoSlice";
+import {setTask} from "features/todoSlice";
 
 /// ENUMS
 import {Names} from "enums";
@@ -20,7 +20,7 @@ const TodoInput: FC = () => {
         const formData = new FormData(event.currentTarget);
         const newTask = createTask(formData.get(Names.inputValue) as string);
 
-        dispatch(setNewTask(newTask));
+        dispatch(setTask(newTask));
 
         formData.set(Names.inputValue, 'asd');
     };
