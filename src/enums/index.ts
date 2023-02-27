@@ -4,9 +4,12 @@ export enum Names {
     all = 'all',
     active = 'active',
     completed = 'completed',
-    btnStateLocalSTRG = 'btnState'
+    btnStateLocalSTRG = 'btnState',
+    check = 'check',
+    close = 'close'
 }
 
 export enum Index {
-    childrenIndex
+    childrenIndex,
+    idIndex
 }

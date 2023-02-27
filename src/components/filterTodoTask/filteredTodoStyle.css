@@ -1,0 +1,30 @@
+.settings_buttons {
+    display: flex;
+}
+
+.edit_button {
+    margin-right: 10px;
+    color: #455963;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+}
+
+.checkIcon {
+    color: green;
+    margin-right: 10px;
+}
+
+.closeIcon {
+    color: red;
+}
+
+.inputChange input {
+    font-size: 18px;
+    padding: 5px 0px 5px 10px;
+    outline: none;
+    border: 0px;
+    width: 332px;
+}
